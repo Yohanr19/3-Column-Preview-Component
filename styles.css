@@ -1,0 +1,74 @@
+body 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+}
+.big-section
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17vw;
+    margin-right: 17vw;
+    height: 70vh;
+}
+.section
+{   display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-evenly;
+    min-width: 160px;
+    min-height: 300px;
+    padding-left: 28px;
+}
+.sedans {   background-color: hsl(31, 77%, 52%);}
+.suvs {   background-color: hsl(184, 100%, 22%);}
+.luxury {  background-color: hsl(179, 100%, 13%);}
+.car-definition 
+{   padding-top: 0px;
+    margin-top: -5px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family:"Lexend Deca";
+    padding-right: 12%;
+}
+body, .car-title, .car-button 
+{
+    color: hsla(0, 0%, 100%, 0.75)
+}
+.car-button 
+{
+    background-color: transparent;
+    border-radius: 30%;
+    border-style: solid;
+    width: 50%;
+    height: 12%;
+}
+.car-title
+{
+    text-transform: uppercase ;
+    font-family: "Big Shoulders Display";
+    margin-top: -5px;
+}
+.car-icon 
+{
+    width: 20%;
+    height: auto;
+}
+:hover.car-button
+{
+    background-color: white;
+}
+:hover.luxuryBtn{ color: hsl(179, 100%, 13%);}
+:hover.suvsBtn{color:hsl(184, 100%, 22%);}
+:hover.sedansBtn {color:hsl(31, 77%, 52%);}
+@media (max-width: 600px)  {
+    .big-section 
+    {
+        flex-direction: column;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
